@@ -3,10 +3,14 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-iframe"
-            src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-twitter"
+            src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+    <script async custom-element="amp-instagram"
+            src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    <script async custom-element="amp-youtube"
+            src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://localhost:3211/iframe.html" />
+    <link rel="canonical" href="http://localhost:3211/hello.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -22,23 +26,26 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
-<h1>Welcome to the mobile web</h1>
-<p>Some text here to occupy space</p>
-<p>Some text here to occupy space</p>
-<p>Some text here to occupy space</p>
-<p>Some text here to occupy space</p>
-<p>Some text here to occupy space</p><p>Some text here to occupy space</p>
+<h1>AMP with third-party components</h1>
+<h2>Instagram</h2>
+<amp-instagram
+        data-shortcode="BLHSo_Mhbv_"
+        width="320"
+        height="392"
+        layout="responsive">
+</amp-instagram>
+<h2>Youtube</h2>
+<amp-youtube
+        data-videoid="CxKWTzr-k6s"
+        layout="responsive"
+        width="480" height="270">
+</amp-youtube>
 
-<p>Some text here to occupy space</p>
+<h2>Twitter</h2>
+<amp-twitter width="390" height="50"
+             layout="responsive"
+             data-tweetid="638793490521001985">
+</amp-twitter>
 
-<amp-iframe width=300 height=300
-            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-            layout="responsive"
-            frameborder="0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDG9YXIhKBhqclZizcSzJ0ROiE0qgVfwzI&q=Alameda,%20CA">
-    <!--amp-img layout="fill"
-             src="https://i.vimeocdn.com/video/536538454_640.webp"
-             placeholder></amp-img-->
-</amp-iframe>
 </body>
 </html>
